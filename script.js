@@ -249,7 +249,7 @@ enter.className='keys enter_key';
 enter.innerText='Enter';
 row3.append(enter);
 
-//////keys4
+/////keys4
 const leftShift= document.createElement('div');
 leftShift.className='keys shift_key shift_left';
 leftShift.innerText='Shift';
