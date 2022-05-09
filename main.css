@@ -1,0 +1,84 @@
+*{
+    padding:0px;
+    box-sizing: border-box;
+    margin:0px;
+}
+body{
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 332px;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.keyboard_wrapp{
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    order:2;
+}
+.row{
+    display: flex;
+}
+.keys{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    cursor: pointer;
+}
+.backspace{
+    width: 128px;
+}
+.caps{
+    width: 128px;
+}
+.enter_key{
+    width: 128px;
+}
+.shift_key{
+    width: 128px;
+}
+.tab{
+    width: 128px;
+}
+.space_key{
+    width:468px
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    max-width: 1012px;
+    width: 100%;
+    margin: 10px auto;
+    border: 3px solid black; 
+    resize: none;
+    background-color: bisque;
+    outline: none;
+    font-size: 20px;
+}
+.keys.active{
+    background-color: dimgray;
+}
+.keys.remove{
+    animation:  animation 0.5s linear;
+}
+@keyframes animation{
+    0%{
+        background-color: dimgray;
+    }
+    100%{
+        background-color: black;
+    }
+}
